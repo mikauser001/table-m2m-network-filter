@@ -68,7 +68,6 @@ class Exchange(models.Model):
     order = models.IntegerField(null=True)
     overview = models.BooleanField(default=False)
     basic = models.BooleanField(default=False)
-    #logo_coin = models.ForeignKey(Coins, related_query_name="coins_logos", related_name="Coins", on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
         return self.name
